@@ -1,7 +1,7 @@
 import Processo from "../abstracoes/processo";
 import MenuTipoCadastroCliente from "../menus/menuTipoCadastroCliente";
-import CadastroClienteDependente from "./cadastroClienteDependente";
-import CadastroClienteTitular from "./cadastroClienteTitular";
+import CadastroClienteDependente from "./cadastro/cadastroClienteDependente";
+import CadastroClienteTitular from "./cadastro/cadastroClienteTitular";
 
 export default class TipoCadastroCliente extends Processo {
     constructor() {

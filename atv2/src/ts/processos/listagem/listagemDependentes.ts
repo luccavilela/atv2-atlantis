@@ -1,7 +1,7 @@
-import Processo from "../abstracoes/processo";
-import Armazem from "../dominio/armazem";
-import Cliente from "../modelos/cliente";
-import ImpressorDependentes from "../impressores/impressorClientesDependentes";
+import Processo from "../../abstracoes/processo";
+import Armazem from "../../dominio/armazem";
+import Cliente from "../../modelos/cliente";
+import ImpressorDependentes from "../../impressores/impressorClientesDependentes";
 
 export default class ListagemDependentes extends Processo {
     private clientes: Cliente[];
