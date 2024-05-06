@@ -2,6 +2,7 @@ import Processo from "../../abstracoes/processo";
 import Armazem from "../../dominio/armazem";
 import Cliente from "../../modelos/cliente";
 import EditarEnderecoTitular from "./editarEnderecoTitular";
+import EditarTelefoneTitular from "./editarTelefoneTitular";
 
 export default class EditarClienteTitular extends Processo {
     private clientes: Cliente[];
@@ -30,6 +31,9 @@ export default class EditarClienteTitular extends Processo {
             clienteParaEditar.DataNascimento = novaDataNascimento;
 
             this.processo = new EditarEnderecoTitular(clienteParaEditar)
+            this.processo.processar()
+
+            this.processo = new EditarTelefoneTitular(clienteParaEditar)
             this.processo.processar()
 
             console.log('Cliente editado com sucesso.');

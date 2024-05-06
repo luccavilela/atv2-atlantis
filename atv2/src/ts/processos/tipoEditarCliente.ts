@@ -1,5 +1,6 @@
 import Processo from "../abstracoes/processo";
 import MenuTipoEditarCliente from "../menus/menuTipoEditarCliente";
+import EditarClienteDependente from "./editar/editarClienteDependente";
 import EditarClienteTitular from "./editar/editarClienteTitular";
 
 export default class TipoEditarCliente extends Processo {
@@ -17,7 +18,7 @@ export default class TipoEditarCliente extends Processo {
                 this.processo.processar()
                 break
             case 2:
-                this.processo = new EditarClienteTitular()
+                this.processo = new EditarClienteDependente()
                 this.processo.processar()
                 break
             default:
