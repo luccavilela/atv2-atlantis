@@ -1,6 +1,6 @@
 # Atividade 2
 
-## Desenvolvimento Web III
+## Técnicas de programação 2
 
 ## Como Rodar o Projeto
 
